@@ -1,106 +1,192 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <head>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-        <style>
-        body {
-          font-family: "Trirong", serif;
-          color: #4CAF50;
-        }
-        </style>
-       
-        </head>
- <title>Customer Information Page</title>
-    <style>
-        body {
-      background-image:
-       url("images/folk dance.jpg");
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-      background-size:100% 100%;
-    }
-  label {
-            display: block;
-            margin-bottom: 20px;
-            color: azure;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="address"],
-        input[type="date"],
-        input[type="number"],
-        input[type="tel"],
-        input[type="password"],
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Janapada Loka</title>
+    <link rel="shortcut icon" href="image/logobgl.png" type="image/x-icon">
+   <!--Bootstrap CSS--> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Our CSS--><link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <!--Navbar section-->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="image/logobgl.png" alt="brand" class="logo">
+        JANAPADA LOKA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Visit</a></li>
+              <li><a class="dropdown-item" href="#">Room Booking</a></li>
+              <li><a class="dropdown-item" href="#">Event Booking</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!--Bootstrap CSS-->
+   <section class="folk">
+    <div class="container">
+        <div class="row">
+        <!--Text-->
+        <div class="col-md-6">
+            <div class="text">
 
-        textarea {
-            width: 300px;
-            padding: 5px;
-            margin-bottom: 10px;
+                <h2 class="text-center">Payment Information</h2>
+                <form>
+
+
+                  
+                  <div class="form-group">
+
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+                  </div>
+                  <div class="form-group">
+                    <label for="cardHolder">Card Holder</label>
+                    <input type="text" class="form-control" id="cardHolder" placeholder="Enter card holder name">
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="expiryDate">Expiry Date</label>
+                      <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="cvv">CVV</label>
+                      <input type="text" class="form-control" id="cvv" placeholder="Enter CVV">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Pay Now</button>
+                </form>
+              </div>
+            </body>
+            </html>
+            
+
+
+
+
+
+
+
+
+
+
+
+              
+
+
+
+
+               
+              
           
-        }
-        input[type="submit"] {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
 
 
-    </style>
-</head>
-<body>
-    <h1>Customer Information Page</h1>
-    <form action="process_customer.php" method="POST">
-        <label for="firstname">Firstname:</label>
-        <input type="text" id="firstname" placeholder="firstname" name="firstname" required>
 
-        <label for="lastname">Lastname:</label>
-        <input type="text" id="lastname" placeholder="lastname"  name="lastname" required>
 
-        <label for="email ">Email Address:</label>
-        <input type="email" id="email" placeholder="mail Id"name="email" required>
 
-        <label for="City">City</label>
-    <select id="City" name="City">
-      <option value="Mysore">Mysore</option>
-      <option value="Bidar">Bidar</option>
-      <option value="udupi">udupi</option>
-      <option value="Raichur">Raichur</option>
-      <option value="ballari">ballari</option>
-      <option value="Mandya">Mandya</option>
-      <option value="Vijayapura">Vijayapura</option>
-      <option value="Dharwad">Dharwad</option>
-      <option value="Bengaluru">Bengaluru</option>
-</select>
-    
-    <label for="address">Enter your Residential Address:</label>
-        <textarea id="address" placeholder="address" name="address" rows="4" required></textarea>
 
-        <label for="date of birth">Enter date of birth:</label>
-        <input type="date" id="date of birth"  name="date of birth" required>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" placeholder="age"  name="age" required>
 
-        <label for="Gender"> Gender:</label>
-        <input type="radio" name="gender" value="male"> Male
-<input type="radio" name="gender" value="female"> Female
-<input type="radio" name="gender" value="other"> Other
 
-        <label for="phone number">Enter phone number:</label>
-        <input type="tel" id="Phone number"  placeholder="phone number" name="Phone number" required>
 
-        <label for="Username">Username:</label>
-        <input type="text" id="Username"  placeholder="Username" name="Username" required>
 
-        <label for="Password">Password:</label>
-        <input type="password" id="password"  placeholder="Password"  name="password" required>
 
-     
 
-             <input type="submit" value="Submit">
-    </form>
-</body>
+
+
+
+
+
+
+
+              
+            <div class="buttons">
+                <a href="login.html"class="btn btn-primary">Login</a>
+                <a href="signup.html"class="btn btn-outline-secondary ms-3">Sign Up</a>
+            </div>
+        </div>
+        <!--Image-->
+        <div class="col-md-6">
+            <img src="image/bkl11.png" alt="Folk Image" class="w-100">
+        </div>
+    </div>
+
+    </div>
+   </section>
+   <!--Footer-->
+   <footer class="section-p1">
+    <div class="col">
+      <img src="image/logobgl.png" alt="" class="logo">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> IIIC - Christ University kengeri campus</p>
+      <p><strong>Hours</strong> 9:00 am - 4:00 pm</p>
+      <h4>Follow us</h4>
+      <div class="follow">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivery information</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms & conditions</a>
+      <a href="#">Contact us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign - in</a>
+      <a href="#">View Cart</a>
+      <a href="#">My wishlist</a>
+      <a href="#">Track my orders</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From app Store or play store
+      </p>
+      <div class="row">
+        <img src="image/play.png" alt="" style="max-width: 170px; max-height: 50px;">
+      </div>
+      <p>Securted payment Gateways</p>
+      <img src="image/pay.png" alt="">
+
+    </div>
+    <div class="copyright">
+      <p>Developed & Maintained by IIIC - Christ University, Kengeri</p>
+    </div>
+  </footer>
+   <!--Bootstrap CSS-->
+   <!--Bootstrap CSS-->
+   <!--Bootstrap CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
